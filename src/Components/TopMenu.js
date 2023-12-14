@@ -26,10 +26,6 @@ export const TopMenu = () => {
             display={'flex'}
             justifyContent={'space-around'}
             gap={2}
-            // alignItems={'flex-end'}
-            // alignSelf={'flex-end'}
-            // justifySelf={'flex-end'}
-            // Is the reason none of these work because they're not "Grid Items"?
         >
             <Grid item>
                 <Dropdown>

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Container } from '@mui/material'
 import './App.css'
 import Grid from '@mui/material/Grid' // Grid version 1
@@ -8,7 +9,7 @@ import { TopMenu } from './Components/TopMenu'
 // Start getting into the habit of creating style components for the css.
 function App() {
     return (
-        <Container className="homeContainer" maxWidth="false" disableGutters>
+        <Container className="homeContainer" maxWidth={false} disableGutters>
             <TopMenu />
             <Grid
                 xl={12}
