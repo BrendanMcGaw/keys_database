@@ -1,7 +1,6 @@
 import { Container } from '@mui/material'
 import './App.css'
-// import Grid from "@mui/material/Grid"; // Grid version 1
-import Grid from '@mui/material/Unstable_Grid2' // Grid version 2
+import Grid from '@mui/material/Grid' // Grid version 1
 import HeaderImage from './Assets/placeholder-banner.jpg'
 import { TopMenu } from './Components/TopMenu'
 
@@ -19,7 +18,10 @@ function App() {
                     textAlign: 'center',
                 }}
             >
-                <img src={HeaderImage} />
+                <img
+                    src={HeaderImage}
+                    alt={'Heading slider filled with keys and programming'}
+                />
             </Grid>
         </Container>
     )

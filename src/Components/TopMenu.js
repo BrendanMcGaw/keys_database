@@ -3,6 +3,11 @@ import Dropdown from '@mui/joy/Dropdown'
 import MenuButton from '@mui/joy/MenuButton'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
+import styled from '@emotion/styled'
+
+const StyledMenuButton = styled(MenuButton)`
+    border-radius: 0;
+`
 
 export const TopMenu = () => {
     return (
@@ -15,36 +20,51 @@ export const TopMenu = () => {
             direction={'row'}
         >
             <Dropdown>
-                <MenuButton variant="soft" size="lg" color="primary">
+                <StyledMenuButton variant="outlined" size="lg" color="primary">
                     Keys
-                </MenuButton>
+                </StyledMenuButton>
                 <Menu>
                     <MenuItem>Programmable</MenuItem>
                     <MenuItem>Shaped</MenuItem>
                 </Menu>
             </Dropdown>
             <Dropdown>
-                <MenuButton variant="soft" size="lg" color="primary" Format>
+                <StyledMenuButton
+                    variant="outlined"
+                    size="lg"
+                    color="primary"
+                    Format
+                >
                     Hardware
-                </MenuButton>
+                </StyledMenuButton>
                 <Menu>
                     <MenuItem>Keys</MenuItem>
                     <MenuItem>Other Things</MenuItem>
                 </Menu>
             </Dropdown>
             <Dropdown>
-                <MenuButton variant="soft" size="lg" color="primary" Format>
+                <StyledMenuButton
+                    variant="outlined"
+                    size="lg"
+                    color="primary"
+                    Format
+                >
                     Devices
-                </MenuButton>
+                </StyledMenuButton>
                 <Menu>
                     <MenuItem>Cars</MenuItem>
                     <MenuItem>Machinary</MenuItem>
                 </Menu>
             </Dropdown>
             <Dropdown>
-                <MenuButton variant="soft" size="lg" color="primary" Format>
+                <StyledMenuButton
+                    variant="outlined"
+                    size="lg"
+                    color="primary"
+                    Format
+                >
                     My Account
-                </MenuButton>
+                </StyledMenuButton>
                 <Menu>
                     <MenuItem>Profile</MenuItem>
                     <MenuItem>Logout</MenuItem>
